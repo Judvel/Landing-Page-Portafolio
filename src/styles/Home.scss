@@ -1,0 +1,67 @@
+@import "vars";
+
+.main-presentation-container img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+}
+
+.main-presentation-container{
+    padding: 10px;
+    font-style: normal;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.main-presentation-container h1{
+    margin-bottom: 5px;
+}
+
+.main-presentation-container ul{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    margin-top: 10px;
+}
+
+.main-aboutme-container {
+    background: var(--background-color2);
+    padding: 10px;
+}
+
+
+.main-aboutme-container h2 {
+    margin-bottom: 5px;
+}
+
+.main-skill-container{
+    padding: 10px;
+}
+
+.main-skill-container h2{
+    margin-bottom: 5px;
+}
+
+.main-skill--tools-container{
+    display: grid;
+    justify-content: center;
+    gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+
+}
+.tools-container{
+    text-align: center;
+}
+
+.tools-container img{
+    max-width: 110px;
+    height: 110px;
+}
+
+.main-works-container{
+    padding: 10px;
+}
+
+.main-works-container img{
+    width: 100%;
+}
