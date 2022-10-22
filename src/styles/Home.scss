@@ -1,67 +1,121 @@
 @import "vars";
 
+a {
+  text-decoration: none;
+}
+
 .main-presentation-container img {
-    width: 90px;
-    height: 90px;
-    border-radius: 50%;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
 }
 
-.main-presentation-container{
-    padding: 10px;
-    font-style: normal;
-    font-size: 1.4rem;
-    font-weight: 400;
+.main-presentation-container {
+  padding: 10px;
+  font-style: normal;
+  font-size: 1.4rem;
+  font-weight: 400;
 }
 
-.main-presentation-container h1{
-    margin-bottom: 5px;
+.main-presentation-container h1 {
+  margin-bottom: 5px;
 }
 
-.main-presentation-container ul{
-    display: flex;
-    justify-content: space-around;
-    list-style: none;
-    margin-top: 10px;
+.main-presentation-container ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  margin-top: 10px;
 }
 
 .main-aboutme-container {
-    background: var(--background-color2);
-    padding: 10px;
+  background: var(--background-color2);
+  padding: 10px;
 }
-
 
 .main-aboutme-container h2 {
-    margin-bottom: 5px;
+  margin-bottom: 5px;
 }
 
-.main-skill-container{
-    padding: 10px;
+.main-skill-container {
+  padding: 10px;
 }
 
-.main-skill-container h2{
-    margin-bottom: 5px;
+.main-skill-container h2 {
+  margin-bottom: 5px;
 }
 
-.main-skill--tools-container{
-    display: grid;
-    justify-content: center;
-    gap: 10px;
-    grid-template-columns: repeat(2, 1fr);
-
+.main-skill--tools-container {
+  display: grid;
+  justify-content: center;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fill, 140px);
 }
-.tools-container{
-    text-align: center;
-}
-
-.tools-container img{
-    max-width: 110px;
-    height: 110px;
+.tools-container {
+  text-align: center;
 }
 
-.main-works-container{
-    padding: 10px;
+.tools-container img {
+  max-width: 110px;
+  height: 110px;
 }
 
-.main-works-container img{
-    width: 100%;
+.main-works-container {
+  padding: 10px;
+  background-color: var(--background-color2);
+}
+
+h2 {
+  padding: 10px;
+}
+
+.main-works-container img {
+  width: 100%;
+}
+
+.main-works--links {
+  margin: 20px 0;
+}
+.main-works--links .links-repo {
+  padding: 10px;
+  border: 1px solid #2a7ae4;
+  color: #2a7ae4;
+  border-radius: 15px;
+  margin-right: 10px;
+}
+
+.main-works--links .links-deploy {
+  padding: 10px;
+  background-color: #2a7ae4;
+  color: white;
+  border-radius: 15px;
+  margin-right: 10px;
+}
+
+.main-education-container {
+  padding: 10px;
+}
+.main-education--platform-container {
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.educational-platform {
+  width: 100%;
+  max-width: 600px;
+
+  margin-bottom: 20px;
+  max-width: 368px;
+}
+.educational-platform .logo {
+  display: flex;
+  justify-content: center;
+  margin: auto 0;
+  height: 137px;
+}
+.educational-platform .logo img {
+  width: 70%;
+  max-width: 600px;
+  justify-self: center;
 }

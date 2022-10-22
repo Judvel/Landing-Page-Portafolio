@@ -9,10 +9,13 @@ import nodelogo from "../assets/icon/nodejs-original-wordmark.svg";
 import gittlogo from "../assets/icon/git-original-wordmark.svg";
 import reactlogo from "../assets/icon/react-original-wordmark.svg";
 import webpacklogo from "../assets/icon/webpack-original-wordmark.svg";
-import hangman from "../assets/images/gamePage.png"
-import howmanydays from "../assets/images/merry-Chistmas-1920.png"
-import profileaccounttwitter from "../assets/images/Desktop-1980.png"
+import hangman from "../assets/images/gamePage.png";
+import howmanydays from "../assets/images/merry-Chistmas-1920.png";
+import profileaccounttwitter from "../assets/images/Desktop-1980.png";
 import instagramclone from "../assets/images/homePageDesktop.png";
+import uachLogo from "../assets/images/logo_uach-614a369aa9528.png";
+import aluraLogo from "../assets/images/Alura.png";
+import platziLogo from "../assets/images/platzi.png";
 
 const Home = () => {
   return (
@@ -84,33 +87,81 @@ const Home = () => {
         <h2>My works</h2>
         <div>
           <img src={hangman} alt="" />
-          <p>Hangman Game</p>
+          <h3>Hangman Game</h3>
           <p>HTML5, CSS3, JavaScript</p>
+          <div className="main-works--links">
+            <a className="links-repo" href="https://github.com/Judvel/Hangman-Game">
+              Repositorio
+            </a>
+            <a className="links-deploy" href="">
+              Ver Demo
+            </a>
+          </div>
         </div>
         <div>
           <img src={howmanydays} alt="" />
-          <p>How many days until christmas</p>
+          <h3>How many days until christmas</h3>
           <p>HTML5, CSS3, JavaScript</p>
+          <div className="main-works--links">
+            <a className="links-repo" href="">
+              Repositorio
+            </a>
+            <a className="links-deploy" href="">
+              Ver Demo
+            </a>
+          </div>
         </div>
         <div>
           <img src={profileaccounttwitter} alt="" />
-          <p>Profile account Page</p>
+          <h3>Profile account Page</h3>
           <p>HTML5, CSS3</p>
+          <div className="main-works--links">
+            <a className="links-repo" href="">
+              Repositorio
+            </a>
+            <a className="links-deploy" href="https://judvel.github.io/JuanDC-Twitter-account-profile/">
+              Ver Demo
+            </a>
+          </div>
         </div>
         <div>
           <img src={instagramclone} alt="" />
-          <p>Instagram Clone</p>
+          <h3>Instagram Clone</h3>
           <p>HTML5, CSS3</p>
+          <div className="main-works--links">
+            <a className="links-repo" href="https://github.com/Judvel/Instagram-Clone">
+              Repositorio
+            </a>
+            <a className="links-deploy" href="">
+              Ver Demo
+            </a>
+          </div>
         </div>
       </section>
 
-      <section>
+      <section className="main-education-container">
         <h2>Educational Formation</h2>
-        <div>
-          <img src="" alt="" />
-          <p>title</p>
-          <p>year</p>
+        <section className="main-education--platform-container">
+
+        <div className="educational-platform">
+          <div className="logo"><img src={uachLogo} alt="" /></div>
+          <h3>Ingeniería Civil Electónica</h3>
+          <h4>Universidad Austral de Chile</h4>
+          <p>2015 - 2022</p>
         </div>
+        <div className="educational-platform">
+          <div className="logo"><img src={aluraLogo} alt="" /></div>
+          <h3>Web Developer</h3>
+          <h4>Alura Latam</h4>
+          <p>2015 - En curso</p>
+        </div>
+        <div className="educational-platform">
+          <div className="logo"><img src={platziLogo} alt="" /></div>
+          <h3>Web Developer</h3>
+          <h4>Platzi</h4>
+          <p>2022 - En curso</p>
+        </div>
+        </section>
       </section>
     </main>
   );
