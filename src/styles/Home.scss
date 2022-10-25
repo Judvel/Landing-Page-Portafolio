@@ -4,6 +4,7 @@ a {
   text-decoration: none;
 }
 
+
 .main-presentation-container img {
   width: 90px;
   height: 90px;
@@ -11,6 +12,7 @@ a {
 }
 
 .main-presentation-container {
+
   padding: 10px;
   font-style: normal;
   font-size: 1.4rem;
@@ -28,9 +30,19 @@ a {
   margin-top: 10px;
 }
 
-.main-aboutme-container {
+.main-aboutme-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   background: var(--background-color2);
   padding: 10px;
+  font-size: 1.4rem;
+}
+.main-aboutme-container div{
+  
+  display: flex;
+  justify-content: center;
+  text-align: justify;
 }
 
 .main-aboutme-container h2 {
@@ -38,8 +50,18 @@ a {
 }
 
 .main-skill-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
   padding: 10px;
 }
+.main-skill-container .skill-title{
+  display: flex;
+  
+  
+}
+
 
 .main-skill-container h2 {
   margin-bottom: 5px;
@@ -61,16 +83,30 @@ a {
 }
 
 .main-works-container {
+  display: flex;
+  flex-wrap: wrap;
   padding: 10px;
   background-color: var(--background-color2);
 }
 
 h2 {
   padding: 10px;
+  font-size: 2.1rem;
+  width: 100%;
+}
+.main-works--card {
+  max-width: 361px;
+  margin: 0 auto;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  background-color: white;
+  
 }
 
 .main-works-container img {
   width: 100%;
+  max-width: 700px;
 }
 
 .main-works--links {
@@ -94,28 +130,101 @@ h2 {
 
 .main-education-container {
   padding: 10px;
+
 }
 .main-education--platform-container {
   display: flex;
   flex-wrap: wrap;
-
+  flex-direction: column;
 }
 
 .educational-platform {
-  width: 100%;
-  max-width: 600px;
-
+  display: flex;
+  
   margin-bottom: 20px;
-  max-width: 368px;
+  
+  
 }
 .educational-platform .logo {
-  display: flex;
-  justify-content: center;
-  margin: auto 0;
-  height: 137px;
+  margin-left: 10px;
 }
-.educational-platform .logo img {
+/* .educational-platform .logo img {
   width: 70%;
   max-width: 600px;
   justify-self: center;
+} */
+.main-form-container {
+
+  padding: 32px;
+  background-color: var(--background-color2);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+}
+
+.main-form-container label {
+  margin: 10px 0;
+  font-size: 1.4rem;
+}
+
+.main-form-container .input-form {
+  padding: 5px;
+}
+
+#message {
+  height: 133px;
+  font-family: "inter";
+}
+
+#message::placeholder {
+  font-family: "inter";
+}
+
+.sent-button {
+  
+  height: 40px;
+  margin-top: 10px;
+  background-color: #2a7ae4;
+  color: white;
+  border: none;
+}
+
+@media (min-width: 768px) {
+  .main-presentation-container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .main-presentation-container img{
+    width: 148px;
+    height: 148px;
+  }
+  .main-presentation-container div{
+    width: 524px;
+    margin-right: 20px;
+  }
+  .main-presentation-container div ul{
+    width: 400px;
+    justify-content:space-between;
+  }
+
+  .main-aboutme-container h2, .main-aboutme-container p{
+    width: 100%;
+  }
+  .main-skill-container h2, .main-skill-container section{
+    width: 692px;
+  }
+  .main-skill--tools-container{
+    text-align: center;
+  }
+}
+
+@media (min-width: 1062px) {
+  .main-skill--tools-container{
+    grid-template-columns: repeat(7, 140px);
+  }
 }

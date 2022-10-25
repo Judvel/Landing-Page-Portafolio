@@ -11,7 +11,17 @@ const Header = () => {
         <p>Julio Díaz Velásquez</p>
       </section>
       <section className="header--right">
-        <p>Contacto</p>
+      <section className="header--center-index">
+        <nav>
+          <ul>
+            <li><a href="#about-me">About me</a></li>
+            <li><a href="#my-skills">Skills</a> </li>
+            <li><a href="#my-works">Works</a> </li>
+            <li><a href="#education">Education</a> </li>
+          </ul>
+        </nav>
+      </section>
+        <p><a href="#contact">Contacto</a></p>
       </section>
     </header>
   );

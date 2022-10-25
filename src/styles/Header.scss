@@ -1,6 +1,10 @@
+a{
+  text-decoration: none;
+  color: black;
+}
 header {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     width: 100%;
     height: 50px;
@@ -9,6 +13,9 @@ header {
   
   header h2 {
     font-size: 1.5rem;
+  }
+  .header--center-index{
+    display: none;
   }
   
   .header--left{
@@ -19,4 +26,21 @@ header {
   .header--left .logo {
     width: 20px;
     height: 20px;
+  }
+  .header--right{
+    display: flex;
+  }
+
+  @media (min-width: 1440px) {
+    .header--center-index{
+      display: flex;
+    }
+    .header--center-index nav ul{
+      display: flex;
+      list-style: none;
+    
+    }
+    .header--center-index nav ul li{
+      margin-right: 20px;
+    }
   }
